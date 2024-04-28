@@ -18,9 +18,9 @@
 import { computed } from 'vue';
 
 const props = defineProps({
-  numbers:{
+  numbers: {
     type: Number,
-    required: true
+    required: true,
   },
 });
 const emit = defineEmits(['onSetBit']);
@@ -34,8 +34,8 @@ defineOptions({
 const onSetBit = (val: number) => {
   console.log(val);
   debugger;
-  if (props.numbers >=0 ) {
-    let newValue: number = props.numbers ||  0;
+  if (props.numbers >= 0) {
+    let newValue: number = props.numbers || 0;
     const pos = Math.abs(val - 31);
     const bit = newValue & (1 << pos);
     if (bit) {
@@ -50,7 +50,7 @@ const onSetBit = (val: number) => {
 
 const bitButtons = computed(() => {
   debugger;
-  const num: number = props.numbers ||  0;
+  const num: number = props.numbers || 0;
 
   const val = num.toString(2);
   if (val.length < 32) return '0'.repeat(32 - val.length) + val;
