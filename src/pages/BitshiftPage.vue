@@ -13,8 +13,8 @@
         <bits-array :numbers="entrada"/>
       </section>
       <section>
-        <q-btn icon="keyboard_double_arrow_left" @click="moveLeft" />
-        <q-btn icon="keyboard_double_arrow_right" @click="moveRight" />
+        <q-btn icon="keyboard_double_arrow_left" @click="moveLeft" color="dark" text-color="cyan-4" push/>
+        <q-btn icon="keyboard_double_arrow_right" @click="moveRight" color="dark" text-color="cyan-4" push />
       </section>
     </article>
   </q-page>

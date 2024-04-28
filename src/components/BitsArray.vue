@@ -29,8 +29,6 @@ defineOptions({
   name: 'bitShiftPage',
 });
 
-// const entrada = ref<number>(0);
-//
 const onSetBit = (val: number) => {
   console.log(val);
   debugger;
